@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffafc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar - match index.php styles */
+.nav,
+nav {
+  background: #070607;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a,
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover,
+nav ul li a:hover {
+  background: #ff4081;
+  border-radius: 5px;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  max-width: 1200px; /* was 900px */
+  width: 92%; /* use more horizontal space on wide screens */
+  margin: auto; /* center as flex child between header and footer */
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.user-info {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.user-info h2 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.order-history {
+  margin-top: 30px;
+}
+
+.order-history h3 {
+  color: #e91e63;
+  margin-bottom: 15px;
+}
+
+.order-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-history th, .order-history td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.order-history th {
+  background-color: #fce4ec;
+  color: #e91e63;
+}
+
+.no-orders {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.logout-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-logout {
+  background-color: #e91e63;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-logout:hover {
+  background-color: #c2185b;
+}
+
+/* Footer - match index.php styles */
+.footer,
+footer {
+  background: #111;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+footer a {
+  color: #ff4081;
+  margin: 0 10px;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
